@@ -4,11 +4,11 @@
       <div class="hero-overlay"></div>
       <div class="hero-content" data-aos="fade-up">
         <span class="badge">EST. 2026</span>
-        <h1>Gerçek Kahve <br><span class="highlight">Sanatla Buluştu</span></h1>
-        <p>Dünyanın en seçkin çiftliklerinden gelen çekirdekleri, usta baristalarımızın dokunuşuyla birer sanat eserine dönüştürüyoruz.</p>
+        <h1>Real Coffee<br><span class="highlight">Meeting Art</span></h1>
+        <p style="color: white;">We transform beans sourced from the world's most select farms into works of art with the touch of our master baristas.</p>
         <div class="hero-btns">
-          <router-link to="/menu" class="btn-primary">Menüyü Keşfet</router-link>
-          <a href="#services" class="btn-secondary">Hizmetlerimiz</a>
+          <router-link to="/menu" class="btn-primary">Explore the Menu</router-link>
+          <a href="#services" class="btn-secondary">Our services</a>
         </div>
       </div>
     </section>
@@ -16,47 +16,47 @@
     <section class="stats-bar">
       <div class="stat-item">
         <span class="number">15+</span>
-        <span class="label">Kahve Çeşidi</span>
+        <span class="label">Coffee Type</span>
       </div>
       <div class="stat-item">
         <span class="number">10k+</span>
-        <span class="label">Mutlu Müşteri</span>
+        <span class="label">Happy Customer</span>
       </div>
       <div class="stat-item">
         <span class="number">5</span>
-        <span class="label">Şube</span>
+        <span class="label">Branch</span>
       </div>
       <div class="stat-item">
         <span class="number">120+</span>
-        <span class="label">Günlük Kavurma</span>
+        <span class="label">Daily Roasting</span>
       </div>
     </section>
 
-    <section id="services" class="services">
+    <section id="services" class="services" style="color: white;">
       <div class="section-title">
-        <h2>Neden Biz?</h2>
+        <h2>Why Us?</h2>
         <div class="underline"></div>
       </div>
       <div class="services-grid">
         <div class="service-card">
           <div class="s-icon">🌱</div>
-          <h3>%100 Organik</h3>
-          <p>Sadece etik tarım ve organik sertifikalı çekirdekler kullanıyoruz.</p>
+          <h3>100% Organic</h3>
+          <p>We only use ethically farmed and organically certified beans.</p>
         </div>
         <div class="service-card">
           <div class="s-icon">🔥</div>
-          <h3>Taze Kavurma</h3>
-          <p>Kahvelerimizi her sabah dükkanımızda taze taze kavuruyoruz.</p>
+          <h3>Fresh Roasting</h3>
+          <p>We roast our coffee fresh in our shop every morning.</p>
         </div>
         <div class="service-card">
           <div class="s-icon">🚚</div>
-          <h3>Hızlı Teslimat</h3>
-          <p>Sıcak kahveniz 15 dakika içinde kapınızda.</p>
+          <h3>Fast Delivery</h3>
+          <p>Your hot coffee will be at your door in 15 minutes.</p>
         </div>
         <div class="service-card">
           <div class="s-icon">👨‍🎨</div>
-          <h3>Usta Baristalar</h3>
-          <p>Latte art şampiyonu ekibimizle görsel şölen sunuyoruz.</p>
+          <h3>Master Baristas</h3>
+          <p>We present a visual feast with our team of latte art champions.</p>
         </div>
       </div>
     </section>
@@ -268,5 +268,9 @@ h1 {
   .stats-bar { flex-direction: column; gap: 30px; }
   .special-promo { flex-direction: column; text-align: center; }
   .hero-btns { flex-direction: column; }
+}
+
+.label{
+  color: white;
 }
 </style>
