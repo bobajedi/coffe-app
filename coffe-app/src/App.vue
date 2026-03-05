@@ -351,6 +351,54 @@ const toggleMenu = () => {
   .mobile-toggle { display: block; }
   .main-title { font-size: 1rem; }
   .footer-grid { text-align: center; }
+  .container{display: none;}
+}
+
+@media (max-width: 1024px) {
+  .container {
+    display: none !important;
+  }
+
+  .desktop-menu { 
+    display: none !important; 
+  }
+  
+  .mobile-toggle { 
+    display: block !important; 
+  }
+
+  .navbar { 
+    padding: 0.8rem 0; 
+  }
+  
+  .nav-container { 
+    padding: 0 1.5rem; 
+  }
+
+  .logo-icon { 
+    font-size: 1.6rem; 
+  }
+  
+  .main-title { 
+    font-size: 1.1rem; 
+  }
+
+  .mobile-menu {
+    top: 65px; 
+    z-index: 1100;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title { font-size: 0.9rem; }
+  .logo-icon { font-size: 1.4rem; }
+  .nav-container { padding: 0 1rem; }
 }
 
 .fade-enter-active, .fade-leave-active { transition: opacity 0.3s ease; }
