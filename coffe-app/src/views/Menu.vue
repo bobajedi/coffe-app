@@ -10,7 +10,6 @@ const coffees = ref([
   { id: 6, name: 'Mocha', price: 130, image: '🍫', desc: 'nice coffe.' },
   { id: 7, name: 'kafe turke', price: 75, image: '🏺', desc: 'nice coffe.' },
   { id: 8, name: 'Filter Coffee', price: 85, image: '⚗️', desc: 'nice coffe.' },
-  // ID'leri çakışmaması için 9, 10... diye devam etmesi daha sağlıklı olur ama koda dokunmuyorum.
   { id: 9, name: 'Filter Coffee', price: 85, image: '⚗️', desc: 'nice coffe.' },
   { id: 10, name: 'Filter Coffee', price: 85, image: '⚗️', desc: 'nice coffe.' }
 ])
@@ -66,15 +65,62 @@ const totalPrice = computed(() => {
 </template>
 
 <style scoped>
-main { display: flex; justify-content: center; padding: 20px; }
-.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-.card { background: #fff; border: 1px solid #d7ccc8; border-radius: 12px; padding: 30px; text-align: center; transition: transform 0.2s; width: 150px; height: 220px; }
-.card:hover { transform: translateY(-5px); }
-.icon { font-size: 40px; margin-bottom: 10px; }
-button { background: #6f4e37; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; margin-top: 10px; }
-button:hover { background: #4e342e; }
-.cart { background: #efebe9; padding: 20px; border-radius: 12px; min-width: 250px; height: fit-content; margin-left: 20px; }
-.remove-btn { background: none; color: red; padding: 0; margin-left: 10px; }
-.checkout-btn { width: 100%; background: #2e7d32; margin-top: 15px; }
-.total { font-size: 1.2rem; margin-top: 10px; }
+main { 
+    display: flex;
+    justify-content: center; 
+    padding: 20px; 
+}
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+.card { 
+    background: #fff; 
+    border: 1px solid #d7ccc8; 
+    border-radius: 12px; padding: 30px; 
+    text-align: center; transition: transform 0.2s; 
+    width: 150px; 
+    height: 220px; 
+}
+.card:hover { 
+    transform: translateY(-5px);
+ }
+.icon { 
+    font-size: 40px; 
+    margin-bottom: 10px; 
+}
+button { 
+    background: #6f4e37; 
+    color: white; border: none; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    margin-top: 10px;
+ }
+button:hover { 
+    background: #4e342e;
+ }
+.cart { 
+    background: #efebe9;
+    padding: 20px;
+    border-radius: 12px;
+    min-width: 250px;
+    height: fit-content;
+    margin-left: 20px; 
+}
+.remove-btn { 
+    background: none; 
+    color: red; padding: 0; 
+    margin-left: 10px; 
+}
+.checkout-btn { 
+    width: 100%; 
+    background: #2e7d32; 
+    margin-top: 15px; 
+}
+.total { 
+    font-size: 1.2rem; 
+    margin-top: 10px; 
+}
 </style>

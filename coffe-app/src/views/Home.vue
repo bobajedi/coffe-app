@@ -64,29 +64,13 @@
     <section class="special-promo">
       <div class="promo-image">☕</div>
       <div class="promo-text">
-        <span class="promo-tag">Günün Fırsatı</span>
-        <h2>Karamel Macchiato %30 İndirimli!</h2>
-        <p>Sadece bugün geçerli olan bu fırsatı kaçırmayın. Yanında taze kruvasan hediye!</p>
-        <button class="btn-promo">Hemen Sipariş Ver</button>
+        <span class="promo-tag">Deal of the Day</span>
+        <h2>Caramel Macchiato 30% Off!</h2>
+        <p>Don't miss this offer valid today only. Get a free fresh croissant with your purchase!</p>
+        <button class="btn-promo">Order Now</button>
       </div>
     </section>
-
-    <section class="testimonials">
-      <h2>Müşterilerimiz Ne Diyor?</h2>
-      <div class="t-grid">
-        <div class="t-card">
-          <p>"İstanbul'da içtiğim en iyi Flat White! Atmosfer harika."</p>
-          <h4>- Ahmet Yılma</h4>
-        </div>
-        <div class="t-card">
-          <p>"Çalışmak için mükemmel bir ortam, internet hızı ve kahveler 10 numara."</p>
-          <h4>- Selin Deniz</h4>
-        </div>
-      </div>
-    </section>
-
     <section class="social-feed">
-      <h3>Bizi @CoffeeArt hesabından takip edin</h3>
       <div class="insta-grid">
         <div class="insta-post p1"></div>
         <div class="insta-post p2"></div>
@@ -98,7 +82,6 @@
 </template>
 
 <style scoped>
-/* --- GENEL TASARIM --- */
 .home-page {
   overflow-x: hidden;
   background: #121212;
@@ -121,7 +104,6 @@
   margin: 10px auto;
 }
 
-/* --- 1. HERO SECTION --- */
 .hero {
   height: 90vh;
   position: relative;
@@ -194,7 +176,6 @@ h1 {
   transition: 0.3s;
 }
 
-/* --- 2. STATS BAR --- */
 .stats-bar {
   display: flex;
   justify-content: space-around;
@@ -214,7 +195,6 @@ h1 {
   font-weight: 800;
 }
 
-/* --- 3. SERVICES --- */
 .services {
   padding: 80px 10%;
 }
@@ -241,7 +221,6 @@ h1 {
 
 .s-icon { font-size: 3rem; margin-bottom: 20px; }
 
-/* --- 4. SPECIAL PROMO --- */
 .special-promo {
   background: #d2a679;
   margin: 50px 10%;
@@ -262,7 +241,19 @@ h1 {
   border-radius: 5px;
 }
 
-/* --- MOBİL UYUMLULUK --- */
+.btn-promo{
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(201, 200, 200);
+}
+
+.btn-promo:hover{
+  background-color: white;
+  transition: ease-in 0.3s;
+}
+
 @media (max-width: 768px) {
   h1 { font-size: 2.5rem; }
   .stats-bar { flex-direction: column; gap: 30px; }
