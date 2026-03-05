@@ -1,5 +1,7 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
+import router from './router' // Router dosyasını çağırıyoruz
 
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use(router) // Router'ı uygulamaya bağla
+app.mount('#app')
