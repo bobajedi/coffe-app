@@ -54,8 +54,9 @@ const totalPrice = computed(() => {
 
 
 <template>
-  <div class="home-page1">
+   <link rel="icon" type="image/png+jpg" href="/coffe-app/public/coffe.jpg" />
   <main>
+    <div class="home-page1">
     <section class="menu">
       <h2 style="color: white; font-size: 35px; font-style: italic; font-weight:100;">Menuja</h2>
       <div class="grid">
@@ -81,19 +82,31 @@ const totalPrice = computed(() => {
       <div class="total">Gjithsej: <strong>{{ totalPrice }} $</strong></div>
       <button class="checkout-btn" @click="alert('Siparişiniz alındı!')">Perfundo porosine</button>
     </aside>
+      </div>
   </main>
-  </div>
 </template>
 
 <style scoped>
 main { 
     display: flex;
     justify-content: center; 
-    padding: 20px; 
+    padding: 0px; 
+    background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    min-height: 100vh;   
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px);
 }
 
-.home-page1{
-    background: #121212;
+.home-page1 {
+  background: rgba(0, 0, 0, 0.6); 
+  backdrop-filter: blur(15px); 
+  -webkit-backdrop-filter: blur(15px);
+  margin: 0;
+  color: white;
+  padding: 60px;
 }
 .grid { 
     display: grid; 
@@ -101,7 +114,9 @@ main {
     gap: 20px; 
 }
 .card { 
-    background: #514f4f; 
+    background: rgba(116, 114, 114, 0.6); 
+    backdrop-filter: blur(1px); 
+    -webkit-backdrop-filter: blur(1px);
     border: 1px solid #555453; 
     box-shadow: rgba(128, 128, 128, 0.35) 0px 5px 15px;
     border-radius: 12px; padding: 30px; 
