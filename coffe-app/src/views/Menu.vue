@@ -2,16 +2,34 @@
 import { ref, computed } from 'vue'
 
 const coffees = ref([
-  { id: 1, name: 'Espresso', price: 80, image: '☕', desc: 'nice coffe.' },
-  { id: 2, name: 'Latte', price: 115, image: '🥛', desc: 'nice coffe.' },
-  { id: 3, name: 'Cappuccino', price: 105, image: '☁️', desc: 'nice coffe.' },
-  { id: 4, name: 'Iced Americano', price: 95, image: '🧊', desc: 'nice coffe.' },
-  { id: 5, name: 'Flat White', price: 120, image: '☕', desc: 'nice coffe.' },
-  { id: 6, name: 'Mocha', price: 130, image: '🍫', desc: 'nice coffe.' },
-  { id: 7, name: 'kafe turke', price: 75, image: '🏺', desc: 'nice coffe.' },
-  { id: 8, name: 'Filter Coffee', price: 85, image: '⚗️', desc: 'nice coffe.' },
-  { id: 9, name: 'Filter Coffee', price: 85, image: '⚗️', desc: 'nice coffe.' },
-  { id: 10, name: 'Filter Coffee', price: 85, image: '⚗️', desc: 'nice coffe.' }
+  { id: 1, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 2, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 3, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 4, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 5, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 6, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 7, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 8, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 9, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 10, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 11, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 12, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 13, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 14, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 15, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 16, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 17, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 18, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 19, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 20, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 21, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 22, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 23, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 24, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 25, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 26, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 27, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
+  { id: 28, name: 'Espresso', price: 1.50, image: '☕', desc: 'nice coffe.' },
 ])
 
 const cart = ref([])
@@ -34,16 +52,18 @@ const totalPrice = computed(() => {
 })
 </script>
 
+
 <template>
+  <div class="home-page1">
   <main>
     <section class="menu">
-      <h2 style="color: white;">Menuja</h2>
+      <h2 style="color: white; font-size: 35px; font-style: italic; font-weight:100;">Menuja</h2>
       <div class="grid">
         <div v-for="coffee in coffees" :key="coffee.id" class="card">
           <div class="icon">{{ coffee.image }}</div>
           <h3>{{ coffee.name }}</h3>
           <p>{{ coffee.desc }}</p>
-          <div class="price">{{ coffee.price }} $</div>
+          <div class="price">{{ coffee.price }} €</div>
           <button @click="addToCart(coffee)">Shto ne shporte</button>
         </div>
       </div>
@@ -62,6 +82,7 @@ const totalPrice = computed(() => {
       <button class="checkout-btn" @click="alert('Siparişiniz alındı!')">Perfundo porosine</button>
     </aside>
   </main>
+  </div>
 </template>
 
 <style scoped>
@@ -70,18 +91,24 @@ main {
     justify-content: center; 
     padding: 20px; 
 }
+
+.home-page1{
+    background: #121212;
+}
 .grid { 
     display: grid; 
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
 }
 .card { 
-    background: #fff; 
-    border: 1px solid #d7ccc8; 
+    background: #514f4f; 
+    border: 1px solid #555453; 
+    box-shadow: rgba(128, 128, 128, 0.35) 0px 5px 15px;
     border-radius: 12px; padding: 30px; 
     text-align: center; transition: transform 0.2s; 
     width: 150px; 
     height: 220px; 
+    color: rgb(255, 255, 255);
 }
 .card:hover { 
     transform: translateY(-5px);
@@ -102,12 +129,13 @@ button:hover {
     background: #4e342e;
  }
 .cart { 
-    background: #efebe9;
+    background: #514f4f;
     padding: 20px;
     border-radius: 12px;
     min-width: 250px;
     height: fit-content;
     margin-left: 20px; 
+    color: rgb(255, 255, 255);
 }
 .remove-btn { 
     background: none; 

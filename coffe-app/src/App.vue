@@ -106,9 +106,24 @@ const toggleMenu = () => {
             <li>Weekend: 09:00 - 00:00</li>
           </ul>
         </div>
+<div class="map-wrapper">
+    
+    <div class="map-container">
+      <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11818.986400853977!2d20.707368287158197!3d42.21986020000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1353956750daee73%3A0x8ef63b11a4ab319f!2sHome%20Lighting!5e0!3m2!1sen!2s!4v1772923328676!5m2!1sen!2s" 
+      width="300" 
+      height="250" 
+      style="border:0;" 
+      allowfullscreen=""
+       loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
       </div>
       <div class="footer-bottom" style="color: white;">
-        &copy;2024 CoffeeArt. All rights reserved.
+        &copy;2026 CoffeeArt. All rights reserved.
       </div>
     </footer>
   </div>
@@ -130,6 +145,18 @@ const toggleMenu = () => {
   justify-content: right;
   margin-top: -50px;
   padding: 10px;
+}
+
+.map-container {
+  border: 2px solid #ccc;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-left: auto; 
+  
+  right: 20px;  
+  top: 50%;    
 }
 
 .Btn {
